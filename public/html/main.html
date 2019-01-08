@@ -3,15 +3,34 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>TEAM</title>
+    <title>TEAMS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!-- TODO fix sources-->
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="scripts/main.js"></script>
 </head>
 <body>
-    
+    <div class="container">
+        <h1 class="text-center m-3">Teams</h1>
+        <div class="row justify-content-around">
+            <div class="card d-inline-block text-center" style="width: 18rem;">
+                <img class="card-img-top" height="280" style="width:auto;" src="images/Cue-logo.png" alt="Team Cue logo">
+                <div class="card-body text-left">
+                    <h5 class="card-title"> Team Cue</h5>
+                    <a href="team?team=cue" class="btn btn-primary">Mer info</a>
+                </div>
+            </div>
+
+            <div class="card d-inline-block text-center" style="width: 18rem;">
+                <img class="card-img-top" height="280" style="width:auto;" src="images/W.E.I-logo.png" alt="Team W.E.I logo">
+                <div class="card-body text-left">
+                    <h5 class="card-title"> Team W.E.I</h5>
+                    <a href="team?team=wei" class="btn btn-primary">Mer info</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
 </body>
 </html>

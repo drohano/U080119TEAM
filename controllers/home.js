@@ -4,3 +4,7 @@ var path = require('path');
 exports.Index = function(req,res){
     res.sendFile(path.resolve('public/html/main.html'));
 };
+
+exports.Team = function(req,res){
+    res.sendFile(path.resolve('public/html/team.html'));
+};
