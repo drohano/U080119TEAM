@@ -8,3 +8,7 @@ exports.Index = function(req,res){
 exports.Team = function(req,res){
     res.sendFile(path.resolve('public/html/team.html'));
 };
+
+exports.Contact = function(req,res){
+    res.sendFile(path.resolve('public/html/contact.html'));
+};

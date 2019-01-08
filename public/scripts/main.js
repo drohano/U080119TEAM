@@ -1,3 +1,7 @@
+//btn1 = id på knapp i team html
+
+$("#btn1").click(sendEmail());
+
 function sendEmail(){
     event.preventDefault();
     var data = {
