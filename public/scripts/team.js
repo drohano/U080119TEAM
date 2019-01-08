@@ -8,11 +8,21 @@ function getUrlVars() {
 
 var team = getUrlVars()["team"];
 if (typeof team !== 'undefined'){
-    getApi(team)
+    getApi(team, function(data){
+        $.each(data[0][1].name, function(i, value){
+            $("#test").append(value + '<br>');
+        });
+        /*$.each(data[0][1].info, function(i, value){
+            $("#test").append(value + '<br>');
+        });
+        */
+        $("#test").append(data[0][1].info + '<br>');
+        
+    });
 }else{
     window.location = "/";
 }
-function getApi(team){
+function getApi(team, callback){
     $.ajax({
         method: 'GET',
         url:'https://janadmin.herokuapp.com/api/' + team,
