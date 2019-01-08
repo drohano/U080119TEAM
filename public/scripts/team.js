@@ -7,6 +7,9 @@ function getUrlVars() {
 }
 
 var team = getUrlVars()["team"];
+if (typeof team !== 'undefined'){
+    alert(team);
+}else{
+    window.location = "/";
+}
 
-
-alert(team);
