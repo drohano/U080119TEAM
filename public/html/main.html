@@ -7,13 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="scripts/main.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div><a>Team 1</a></div>
-        <div><a>Team 2</a></div>
+    <div class="container min-100">
+        <h1 class="text-center m-3">Teams</h1>
+        <div class="row min-100 justify-content-around text-center">
+            <a class="col-4 bg-primary rounded p-3 m-2 text-light" href="team?team=cue">
+                Team Cue
+            </a>
+            <a class="col-4 bg-primary rounded p-3 m-2 text-light" href="team?team=wei">
+                Team W.E.I
+            </a>
+        </div>
     </div>
 </body>
 </html>
