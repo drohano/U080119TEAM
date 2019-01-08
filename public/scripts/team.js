@@ -8,8 +8,23 @@ function getUrlVars() {
 
 var team = getUrlVars()["team"];
 if (typeof team !== 'undefined'){
-    alert(team);
+    getApi(team)
 }else{
     window.location = "/";
 }
+function getApi(team){
+    $.ajax({
+        method: 'GET',
+        url:'https://janadmin.herokuapp.com/api/' + team,
+        header:{
 
+        },
+
+        success: function (data){
+            console.log(data);
+        },
+        error: function (error){
+            console.log(error);
+        }
+    });
+}
