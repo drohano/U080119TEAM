@@ -11,16 +11,26 @@
     <script src="scripts/main.js"></script>
 </head>
 <body>
-    <div class="container min-100">
+    <div class="container">
         <h1 class="text-center m-3">Teams</h1>
-        <div class="row min-100 justify-content-around text-center">
-            <a class="col-4 bg-primary rounded p-3 m-2 text-light" href="team?team=cue">
-                Team Cue
-            </a>
-            <a class="col-4 bg-primary rounded p-3 m-2 text-light" href="team?team=wei">
-                Team W.E.I
-            </a>
+        <div class="row justify-content-around">
+            <div class="card d-inline-block text-center" style="width: 18rem;">
+                <img class="card-img-top" height="280" style="width:auto;" src="images/Cue-logo.png" alt="Team Cue logo">
+                <div class="card-body text-left">
+                    <h5 class="card-title"> Team Cue</h5>
+                    <a href="team?team=cue" class="btn btn-primary">Mer info</a>
+                </div>
+            </div>
+
+            <div class="card d-inline-block text-center" style="width: 18rem;">
+                <img class="card-img-top" height="280" style="width:auto;" src="images/W.E.I-logo.png" alt="Team W.E.I logo">
+                <div class="card-body text-left">
+                    <h5 class="card-title"> Team W.E.I</h5>
+                    <a href="team?team=wei" class="btn btn-primary">Mer info</a>
+                </div>
+            </div>
         </div>
+        
     </div>
 </body>
 </html>
