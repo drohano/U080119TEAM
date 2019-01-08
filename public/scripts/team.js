@@ -22,6 +22,7 @@ function getApi(team){
 
         success: function (data){
             console.log(data);
+            callback(data);
         },
         error: function (error){
             console.log(error);
