@@ -5,3 +5,7 @@ html, body {
   .min-100 {
       min-height: 100%;
   }
+
+#teamMembers, #skillz {
+    font-size: 22px;
+  }

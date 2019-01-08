@@ -10,13 +10,13 @@ var team = getUrlVars()["team"];
 if (typeof team !== 'undefined'){
     getApi(team, function(data){
         $.each(data[0][1].name, function(i, value){
-            $("#test").append(value + '<br>');
+            $("#teamMembers").append(value + '<br>');
         });
         /*$.each(data[0][1].info, function(i, value){
             $("#test").append(value + '<br>');
         });
         */
-        $("#test").append(data[0][1].info + '<br>');
+        $("#skillz").append(data[0][1].info + '<br>');
         
     });
 }else{
